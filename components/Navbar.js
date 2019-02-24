@@ -46,7 +46,7 @@ export default class Navbar extends PureComponent {
         <div>
           <NavContainer className="fixed_top">
             <InnerContainer row justifyBetween alignCenter>
-              <NavItem><Link to="/jinze" className="remove_decoration font_color_4e">Home</Link></NavItem>
+              <NavItem><Link to="/" className="remove_decoration font_color_4e">Home</Link></NavItem>
               <NavItemContainer>
                 <NavItem><Link to="/about" className="remove_decoration font_color_4e">About</Link></NavItem>
                 <NavItem><Link to="/resume" className="remove_decoration font_color_4e">Resume</Link></NavItem>
@@ -54,7 +54,7 @@ export default class Navbar extends PureComponent {
               </NavItemContainer>
             </InnerContainer>
           </NavContainer>
-          <Route exact={true} path="/jinze" component={Home} />
+          <Route exact={true} path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
           <Route path="/portfolio" component={GetPhotosetContainer} />
